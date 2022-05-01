@@ -62,3 +62,68 @@ console.log(stringFive != numberFive);
 console.log(stringFive === numberFive);
 console.log(stringFive !== numberFive);
 
+// 8. conditional operators: if
+// if, else if, else
+const name = 'bomi';
+if (name === 'bomi') {
+    console.log ('welcome, bomi!');
+}  else if (name === 'coder') {
+    console.log ('you are cute') ;
+}  else {
+    console.log ('unkwnon');
+}
+
+// 9.ternary operator: ? if연산자를 더 쉽게 사용
+// condition ? valuel : value2; 값을 할당 간단하게 출력할때 사용
+console.log(name=== 'bomi'? 'yes' : 'no');
+
+// 10. switch statement
+// use gor multiple if checks
+// use for enum-like value check
+// use for muitiple type checks in TS
+const browser = 'IE';
+switch (browser) {
+    case 'IE':
+        console.log('go away!');
+        break;
+    case 'chrome':
+    case 'firefox':
+        console.log('love ya!');
+        break;
+        default:
+        console.log('go away!');
+        break;
+}
+
+// 11. loops 반복문
+// while loop, while the condition is truthy,
+// body code is ececuted
+let i = 3;
+while (i > 0) {
+    console.log(`while; ${I}`);
+    i--;
+}
+// f 나올떄까지 무한대로 반복해서 계속해서 돈다
+
+// do while loop, body code is executed first,
+// then check the condition
+do {
+    console.log(`do while: ${i}`);
+    i--;
+} while (i > 0);
+// 먼저 블럭을 실행하고 조건이 맞는지 안맞는지 검사 
+
+// for loop, for (begin; condition; step)
+// 시작하는 문장 컨디션 어떤 스텝을 밟을건지
+for (i =3; i > 0; i--) {
+    console.log(`for: ${i}`);
+}
+
+for (let i = 3; i > 0 ; i = i - 2) {
+    //inlne variable declaration
+    //블럭안에 지역변수 선언해서 작성할수도있음
+    console.log(`inline variable for: ${i}`);
+}
+
+//break 루프를 완전히 끝내는것
+//continue 지금것만 스킵하고 다시 다음으로 넘어감 
