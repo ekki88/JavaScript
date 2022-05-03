@@ -18,10 +18,6 @@ class person {
     }
 }
 
-const bomi = new person('bomi', 20)
-console.log(bomi.name);
-console.log(bomi.age);
-bomi.speak();
 
 // 2. getter and setters
 class user {
